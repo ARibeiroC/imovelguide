@@ -1,0 +1,219 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Helvetica;
+}
+
+body {
+    background-image:url("bg.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-color: #0a46be;
+    font-weight: bold;
+    min-height: 100vh;
+    height: auto;
+    color: white;
+}
+
+a {
+    padding: .4rem .6rem;
+    text-align: center;
+    text-decoration: none;
+    color: aliceblue;
+    font-weight: bold;
+    transition: .4s;
+    background: #03112c;
+    margin-inline: .5rem;
+}
+
+a:hover{
+    color: #03112c;
+    background-color: transparent;
+    border: 1px solid #03112c;
+}
+
+input, #btn {
+    padding: .8rem;
+    border-radius: 1rem;
+    border: 1px solid transparent;
+    font-size: 1.1rem;
+}
+
+label {
+    align-items: center;
+    height: 25px;
+}
+
+main {
+    padding-block: 2rem;
+}
+
+main #message {
+    width: 500px;
+    padding: .6rem;
+
+    border: 1px solid #097000 ;
+    background-color: #00ff40;
+
+    text-align: center;
+    margin-inline: auto;
+    opacity: 0;
+    color: #03112c;
+    margin-block: .4rem;
+}
+
+
+.error{
+    border: 1px solid red !important;
+    background-color: #ee7171 !important;
+}
+
+main #cadastro-corretores {
+    display: flex;
+    flex-direction: column;
+    gap: .6rem;
+    justify-content: center;
+
+    width: 500px;
+    min-height: 300px;
+
+    margin-inline: auto;
+
+    padding: 1rem;
+    border-radius: .5rem;
+
+    background-color: rgba(255,255,255,.3);
+    backdrop-filter: blur(5px);
+    border: 1px solid white;
+
+    text-shadow: 2px 2px 4px black;
+}
+
+main #cadastro-corretores h2, main #lista-corretores h2 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 20%;
+    padding-block: 2rem;
+}
+
+main #cadastro-corretores form {
+    display: flex;
+    flex-direction: column;
+}
+
+main #cadastro-corretores form #btn {
+    margin-top: 1.5rem;
+    padding: .4rem;
+    background-color: #03112c;
+    color: white;
+    font-weight: bolder;
+    font-size: 1.2rem;
+    transition: .4s;
+    text-align: center;
+}
+
+main #cadastro-corretores form #btn:hover{
+    background-color: #0a46be;
+    box-shadow: 0px 0px 6px #0a46be;
+}
+
+main #cadastro-corretores form #btn:active{
+    box-shadow: 2px 2px 6px inset black;
+}
+
+main #cadastro-corretores form .fields {
+    display: flex;
+    flex-wrap: wrap;
+    gap: .4rem;
+
+    margin-bottom: 1rem;
+}
+
+main #lista-corretores {
+    display: flex;
+    flex-direction: column;
+
+    margin-top: 2rem;
+    margin-inline: auto;
+
+    width: 1200px;
+    height: 300px;;
+
+    overflow-y: hidden;
+    
+    background-color: aliceblue;
+    color:#03112c;
+
+    border-radius: 1rem;
+
+    padding: 1rem;
+}
+
+main #lista-corretores table {
+    display: flex;
+    flex-direction: column;
+    
+    border-collapse: collapse;
+    margin-top: 2rem;
+    overflow-y: scroll;
+    padding: 1rem;
+}
+
+.small {
+    width: 20px;
+}
+
+.medium {
+    width: 200px;
+}
+
+.large {
+    width: 450px;
+}
+
+main #lista-corretores table #thead td {
+    font-weight: bold;
+}
+
+main #lista-corretores table tr td, main #lista-corretores table tr td {
+    border: 2px solid #03112c;
+    padding: .6rem .6rem;
+    text-align: center;
+    color: #03112c;
+}
+
+#btn-salvar{
+    margin-top: 1.5rem;
+    padding: .4rem;
+    background-color: #03112c;
+    color: white;
+    font-weight: bolder;
+    font-size: 1.2rem;
+    transition: .4s;
+    border: 1px solid transparent;
+    border-radius: 1rem;
+}
+
+#btn-salvar:hover{
+    background-color: #0a46be;
+    box-shadow: 0px 0px 6px #0a46be;
+}
+
+#btn-salvar:active{
+    box-shadow: 2px 2px 6px inset black;
+}
+
+#nome {
+    flex: 100%;
+}
+
+#cpf {
+    flex: 15%;
+}
+
+#creci {
+    flex: 40%;
+}
